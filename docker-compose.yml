@@ -85,7 +85,7 @@ services:
       - backend
 
   nuq-postgres:
-    image: postgres:16-alpine
+    image: ghcr.io/firecrawl/nuq-postgres:latest
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
